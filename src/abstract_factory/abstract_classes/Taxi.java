@@ -9,6 +9,14 @@ public abstract class Taxi {
         this.license = license;
     }
 
+    public Driver getDriver() {
+        return driver;
+    }
+
+    public String getLicense() {
+        return license;
+    }
+
     public abstract void takePassenger(String passenger);
 
 }

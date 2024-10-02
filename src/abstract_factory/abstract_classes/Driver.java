@@ -9,4 +9,8 @@ public abstract class Driver {
 
     public abstract void drive();
 
+    public String getName() {
+        return name;
+    }
+
 }

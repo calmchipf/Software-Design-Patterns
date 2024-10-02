@@ -10,6 +10,8 @@ public class UsageAbstractFactory {
         Factory factory = new StandardFactory();
         Taxi taxi = factory.createTaxi("Daniele", "XYZ12345");
         taxi.takePassenger("Rashad");
+        // I got a bit confused thinking that Drivers were supposed to be created in usage
+        // But passing the name and letting the factory handle the driver creation seems logical
 
         factory = new PremiumFactory();
         taxi = factory.createTaxi("Daniele", "XYZ12345");

@@ -1,11 +1,8 @@
-import abstract_factory.UsageAbstractFactory;
 import singleton.UsageSingleton;
 import prototype.UsagePrototype;
 import builder.UsageBuilder;
 import factory_method.UsageFactoryMethod;
-//import factory_method.UsageAbstractFactory;
-
-import java.util.Scanner;
+import abstract_factory.UsageAbstractFactory;
 
 public class Main {
     public static void main(String[] args) {
