@@ -1,3 +1,4 @@
+import abstract_factory.UsageAbstractFactory;
 import singleton.UsageSingleton;
 import prototype.UsagePrototype;
 import builder.UsageBuilder;
@@ -24,6 +25,8 @@ public class Main {
         UsageFactoryMethod.start();
         System.out.println();
 
-//        UsageAbstractFactory.start();
+        System.out.println("Abstract Factory Usage:");
+        UsageAbstractFactory.start();
+        System.out.println();
     }
 }

@@ -12,13 +12,4 @@ public abstract class Taxi {
     }
 
     public abstract void takePassenger(Passenger passenger);
-
-    public String getDriverName() {
-        return driverName;
-    }
-
-    public String getLicense() {
-        return license;
-    }
-
 }
