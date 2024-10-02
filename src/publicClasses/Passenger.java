@@ -16,6 +16,6 @@ public class Passenger {
 
     @Override
     public String toString() {
-        return "publicClasses.Passenger{ Full name:" + name + ' ' + surname + '}';
+        return name + ' ' + surname;
     }
 }

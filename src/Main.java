@@ -1,6 +1,8 @@
 import singleton.UsageSingleton;
 import prototype.UsagePrototype;
 import builder.UsageBuilder;
+import factory_method.UsageFactoryMethod;
+//import factory_method.UsageAbstractFactory;
 
 import java.util.Scanner;
 
@@ -18,8 +20,10 @@ public class Main {
         UsageBuilder.start();
         System.out.println();
 
-//        UsageFactoryMethod.start();
-//
+        System.out.println("Factory Method Usage:");
+        UsageFactoryMethod.start();
+        System.out.println();
+
 //        UsageAbstractFactory.start();
     }
 }
