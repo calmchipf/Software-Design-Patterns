@@ -1,11 +1,13 @@
-import singleton.UsageSingleton;
-import prototype.UsagePrototype;
-import builder.UsageBuilder;
-import factory_method.UsageFactoryMethod;
-import abstract_factory.UsageAbstractFactory;
+import creational.singleton.UsageSingleton;
+import creational.prototype.UsagePrototype;
+import creational.builder.UsageBuilder;
+import creational.factory_method.UsageFactoryMethod;
+import creational.abstract_factory.UsageAbstractFactory;
+import structural.UsageAdapter;
 
 public class Main {
     public static void main(String[] args) {
+        // Creational Design Patterns:
         System.out.println("Singleton Usage:");
         UsageSingleton.start();
         System.out.println();
@@ -25,5 +27,10 @@ public class Main {
         System.out.println("Abstract Factory Usage:");
         UsageAbstractFactory.start();
         System.out.println();
+
+        // Structural Design Patterns:
+        System.out.println("Adapter Usage:");
+        UsageAdapter.start();  // Oh, it has nothing to print.
+        System.out.println();  // But I will keep these for consistency :D
     }
 }
