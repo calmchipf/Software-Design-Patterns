@@ -1,3 +1,4 @@
+import behavioral.chain_of_responsibility.UsageCOR;
 import creational.singleton.UsageSingleton;
 import creational.prototype.UsagePrototype;
 import creational.builder.UsageBuilder;
@@ -32,5 +33,10 @@ public class Main {
         System.out.println("Adapter Usage:");
         UsageAdapter.start();  // Oh, it has nothing to print.
         System.out.println();  // But I will keep these for consistency :D
+
+        // Behavioral Design Patterns:
+        System.out.println("Chain Of Responsibility Usage:");
+        UsageCOR.start();
+        System.out.println();
     }
 }

@@ -1,0 +1,6 @@
+Bridge pattern is used to separate an interface from its implementation so that both can be developed independently.
+This is useful when you need to implement functionality in multiple different ways.
+Real world example:  Consider you have a remote control as an interface,
+and it can interact with different devices like TVs, DVD players, and home theaters.
+Here, the remote control acts as the bridge between the user and the specific device it controls,
+allowing the same controls to interface with different devices without any changes to the remote itself.

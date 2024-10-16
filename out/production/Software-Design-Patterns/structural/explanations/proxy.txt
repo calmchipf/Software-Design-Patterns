@@ -1,0 +1,5 @@
+Proxy pattern provides a placeholder for another object to control access to it. 
+This can be used for lazy loading, controlling access or adding extra functionalities like 
+logging or security checks when accessing an object.
+real-world example: A credit card is a proxy for a bank account. It facilitates access to 
+the account's funds but also adds security measures such as PIN verification and setting limits to protect the account.

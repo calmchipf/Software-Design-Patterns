@@ -1,0 +1,3 @@
+Adapter can be used when you want to integrate classes that shouldn't work together. It can be done using a wrapper.
+Real world example: When travelling from Europe to US the power plugs and sockets are of different standarts and they are not compatible.
+Here, an adapter can be used.
