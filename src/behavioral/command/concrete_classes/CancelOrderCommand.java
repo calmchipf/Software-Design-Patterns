@@ -1,7 +1,7 @@
-package behavioral.command.implementations;
+package behavioral.command.concrete_classes;
 
 import behavioral.command.OrderReceiver;
-import behavioral.command.interfaces.Command;
+import behavioral.command.abstract_classes.Command;
 
 public class CancelOrderCommand implements Command {
     private OrderReceiver receiver;

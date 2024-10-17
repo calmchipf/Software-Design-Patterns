@@ -1,9 +1,9 @@
 package behavioral.command;
 
-import behavioral.command.implementations.CancelOrderCommand;
-import behavioral.command.implementations.ChangeDestinationCommand;
-import behavioral.command.implementations.CreateOrderCommand;
-import behavioral.command.interfaces.Command;
+import behavioral.command.concrete_classes.CancelOrderCommand;
+import behavioral.command.concrete_classes.ChangeDestinationCommand;
+import behavioral.command.concrete_classes.CreateOrderCommand;
+import behavioral.command.abstract_classes.Command;
 
 public class UsageCommand {
     public static void start() {

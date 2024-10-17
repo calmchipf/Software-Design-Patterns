@@ -1,6 +1,7 @@
 import behavioral.chain_of_responsibility.UsageCOR;
 import behavioral.command.UsageCommand;
 import behavioral.iterator.UsageIterator;
+import behavioral.mediator.UsageMediator;
 import creational.singleton.UsageSingleton;
 import creational.prototype.UsagePrototype;
 import creational.builder.UsageBuilder;
@@ -47,6 +48,10 @@ public class Main {
 
         System.out.println("Iterator Usage:");
         UsageIterator.start();
+        System.out.println();
+
+        System.out.println("Mediator Usage:");
+        UsageMediator.start();
         System.out.println();
     }
 }

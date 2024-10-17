@@ -1,6 +1,6 @@
 package behavioral.command;
 
-import behavioral.command.interfaces.Command;
+import behavioral.command.abstract_classes.Command;
 
 public class CommandInvoker {
     private Command command;
