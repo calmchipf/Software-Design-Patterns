@@ -1,4 +1,6 @@
 import behavioral.chain_of_responsibility.UsageCOR;
+import behavioral.command.UsageCommand;
+import behavioral.iterator.UsageIterator;
 import creational.singleton.UsageSingleton;
 import creational.prototype.UsagePrototype;
 import creational.builder.UsageBuilder;
@@ -37,6 +39,14 @@ public class Main {
         // Behavioral Design Patterns:
         System.out.println("Chain Of Responsibility Usage:");
         UsageCOR.start();
+        System.out.println();
+
+        System.out.println("Command Usage:");
+        UsageCommand.start();
+        System.out.println();
+
+        System.out.println("Iterator Usage:");
+        UsageIterator.start();
         System.out.println();
     }
 }
