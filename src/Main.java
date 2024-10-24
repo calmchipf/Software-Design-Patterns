@@ -5,6 +5,7 @@ import behavioral.mediator.UsageMediator;
 import behavioral.observer.UsageObserver;
 import behavioral.state.UsageState;
 import behavioral.strategy.UsageStrategy;
+import behavioral.template_method.UsageTemplateMethod;
 import creational.singleton.UsageSingleton;
 import creational.prototype.UsagePrototype;
 import creational.builder.UsageBuilder;
@@ -70,7 +71,7 @@ public class Main {
         System.out.println();
 
         System.out.println("Template Method Usage:");
-        UsageStrategy.start();
+        UsageTemplateMethod.start();
         System.out.println();
     }
 }
