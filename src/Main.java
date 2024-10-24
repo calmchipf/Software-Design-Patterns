@@ -2,6 +2,9 @@ import behavioral.chain_of_responsibility.UsageCOR;
 import behavioral.command.UsageCommand;
 import behavioral.iterator.UsageIterator;
 import behavioral.mediator.UsageMediator;
+import behavioral.observer.UsageObserver;
+import behavioral.state.UsageState;
+import behavioral.strategy.UsageStrategy;
 import creational.singleton.UsageSingleton;
 import creational.prototype.UsagePrototype;
 import creational.builder.UsageBuilder;
@@ -52,6 +55,18 @@ public class Main {
 
         System.out.println("Mediator Usage:");
         UsageMediator.start();
+        System.out.println();
+
+        System.out.println("Observer Usage:");
+        UsageObserver.start();
+        System.out.println();
+
+        System.out.println("State State:");
+        UsageState.start();
+        System.out.println();
+
+        System.out.println("Strategy State:");
+        UsageStrategy.start();
         System.out.println();
     }
 }

@@ -13,18 +13,6 @@ public class UsageCommand {
         Command cancel = new CancelOrderCommand(receiver);
         Command change = new ChangeDestinationCommand(receiver, "New York City");
 
-        CommandInvoker invoker = new CommandInvoker();
-
-        // Create an order
-        invoker.setCommand(create);
-        invoker.executeCommand();
-
-        // Change the destination
-        invoker.setCommand(change);
-        invoker.executeCommand();
-
-        // Cancel the order
-        invoker.setCommand(cancel);
-        invoker.executeCommand();
+        // Removed invoker but didn't fix
     }
 }
