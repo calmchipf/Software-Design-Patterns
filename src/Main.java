@@ -61,11 +61,15 @@ public class Main {
         UsageObserver.start();
         System.out.println();
 
-        System.out.println("State State:");
+        System.out.println("State Usage:");
         UsageState.start();
         System.out.println();
 
-        System.out.println("Strategy State:");
+        System.out.println("Strategy Usage:");
+        UsageStrategy.start();
+        System.out.println();
+
+        System.out.println("Template Method Usage:");
         UsageStrategy.start();
         System.out.println();
     }
