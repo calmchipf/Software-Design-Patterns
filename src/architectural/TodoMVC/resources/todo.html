@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+<h3>Todo List</h3>
+<ul id="todo-list"></ul>
+<input type="text" id="new-todo" placeholder="New todo">
+<button onclick="addTodo()">Add Todo</button>
+
+<script>
+    const apiUrl = 'http://localhost:8083/todos';
+
+    async function fetchTodos() {
+        const response = await fetch(apiUrl);
+        const todos = await response.json();
+        const list = document.getElementById("todo-list");
+        list.innerHTML = '';
+        todos.forEach(todo => {
+            const listItem = document.createElement("li");
+            listItem.textContent = todo.description;
+            const deleteButton = document.createElement("button");
+            deleteButton.textContent = "Delete";
+            deleteButton.onclick = () => deleteTodoById(todo.id);
+            listItem.appendChild(deleteButton);
+            list.appendChild(listItem);
+        });
+    }
+
+    async function addTodo() {
+        const description = document.getElementById("new-todo").value;
+        if (!description) return;
+
+        await fetch(apiUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ description })
+        });
+        document.getElementById("new-todo").value = '';
+        fetchTodos();
+    }
+
+    async function deleteTodoById(id) {
+        await fetch(`${apiUrl}/${id}`, { method: 'DELETE' });
+        fetchTodos();
+    }
+
+    document.addEventListener("DOMContentLoaded", fetchTodos);
+</script>
+</body>
+</html>

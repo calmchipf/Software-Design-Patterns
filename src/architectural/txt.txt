@@ -1,0 +1,19 @@
+Structure of back-end
+
+Patterns/
+├── Assignment5/
+│   ├── LoginMVP/
+│   │   ├── Model/
+│   │   ├── View/
+│   │   ├── Presenter/
+│   │   └── LoginMVPMain.java
+│   ├── TodoMVC/
+│   │   ├── Model/
+│   │   ├── View/
+│   │   ├── Controller/
+│   │   └── TodoMVCMain.java
+│   └── StudentManagementMVVM/
+│       ├── Model/
+│       ├── ViewModel/
+│       ├── View/
+│       └── StudentMVVMMain.java
